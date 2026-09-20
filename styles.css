@@ -141,32 +141,145 @@ img {
   font-size: 18px;
 }
 
-.hero {
-  position: relative;
-  height: 85vh;
-  min-height: 540px;
+/* ---- Studio intro ------------------------------------------------------- */
+.studio {
+  padding: 116px 0 18px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.studio h1 {
+  margin: 0 0 20px;
+  font-size: clamp(32px, 5.2vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  max-width: 17ch;
+}
+
+.studio .lede {
   margin: 0;
-  background: url("assets/meta-rider-hero.png") center/cover no-repeat;
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+  max-width: 54ch;
+  font-size: clamp(16px, 1.5vw, 19px);
+  color: var(--muted);
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(6, 7, 9, 0.35) 0%, rgba(8, 9, 12, 0.08) 45%, rgba(8, 9, 12, 0.38) 100%);
-  pointer-events: none;
-}
-
-.hero .sr-only {
-  position: absolute;
-  width: 1px;
+.rule {
   height: 1px;
-  padding: 0;
-  margin: -1px;
+  background: var(--border);
+  margin: 64px 0 0;
+}
+
+/* ---- Games -------------------------------------------------------------- */
+.games {
+  padding: 0 0 40px;
+}
+
+/* Art is shown whole. The old .hero used background:cover in a fixed 85vh box, which
+   cropped the wordmark off the key art. A grid cell with an <img> cannot crop. */
+.game {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 72px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.game:last-child { border-bottom: 0; }
+
+.game:nth-child(even) .game-media { order: 2; }
+
+.game-media {
+  display: block;
+  border-radius: 14px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  background: #0b0c0f;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.16);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+a.game-media:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 46px rgba(0, 0, 0, 0.24);
+}
+
+.game-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.status {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.status.live { background: var(--accent); color: var(--btn-text); }
+.status.soon { border: 1px solid var(--border); color: var(--muted); }
+
+.game-body h2 {
+  margin: 0 0 14px;
+  font-size: clamp(26px, 2.6vw, 34px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.game-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.game-links {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.game-links a {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3px;
+  transition: border-color .2s ease;
+}
+
+.game-links a:hover { border-color: var(--accent); }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
+}
+
+@media (max-width: 900px) {
+  .game {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 48px 0;
+  }
+  /* Art always leads on a narrow screen, whatever the desktop alternation says. */
+  .game:nth-child(even) .game-media { order: 0; }
+  .studio { padding-top: 76px; }
+  .rule { margin-top: 44px; }
 }
 
 .content-card h1,
@@ -239,7 +352,7 @@ img {
     padding: 12px 18px;
   }
 
-  .intro h1 {
+  .game-head h2 {
     font-size: 30px;
   }
 }
@@ -249,16 +362,15 @@ img {
     padding: 80px 0 50px;
   }
 
-  .intro h1 {
+  .game-head h2 {
     font-size: 26px;
   }
-
-  .intro p {
-    font-size: 16px;
+  .game {
+    padding-top: 64px;
   }
 
-  .hero {
-    min-height: 420px;
+  .game-head p {
+    font-size: 16px;
   }
 
   .content-card {
