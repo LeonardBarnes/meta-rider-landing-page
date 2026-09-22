@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Impossible Privacy Policy - Title Unknown Studios</title>
-  <meta name="description" content="What data the Impossible VR game processes, why, and how to have it removed.">
+  <meta name="description" content="What data Impossible collects and uses, how it is retained, and how to request deletion.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,106 +52,146 @@
   <main>
     <section class="section">
       <div class="container narrow content-card">
-        <p>The effective date: September 20, 2026</p>
+        <p>Effective date: September 22, 2026</p>
         <h1>Impossible &mdash; Privacy Policy</h1>
         <p>
           Impossible is developed by Title Unknown Studios. This policy covers the Impossible
-          application on Meta Horizon OS, and describes exactly what data the game processes, why,
-          and how to have it removed. It supplements our
-          <a href="../">general privacy policy</a> and takes precedence for this app.
+          application on Meta Horizon OS and explains what personal data we collect and process,
+          why we use it, where it is retained, and how you can request its deletion. It supplements
+          our <a href="../">general privacy policy</a> and takes precedence for this app.
         </p>
         <p>
-          We run no servers of our own. We use no analytics, advertising or tracking, and no
-          third-party SDK other than the Meta Platform SDK described below.
+          <a class="btn primary" href="#data-deletion">Request data deletion</a>
         </p>
-
-        <h2>Data we process</h2>
         <p>
-          Impossible has one online feature: a global leaderboard. It is optional &mdash; the game
-          is fully playable with the leaderboard turned off, and nothing below is processed in that
-          case.
+          We do not operate our own game-data servers or database. The game uses Meta&rsquo;s
+          Platform SDK and leaderboard service. We do not use game analytics, advertising or
+          tracking services. Receiving data through Meta&rsquo;s SDK is collection and processing,
+          including when the data is used only temporarily in the game&rsquo;s memory.
         </p>
 
+        <h2>Data we collect and use</h2>
+        <p>
+          When Impossible connects to Meta&rsquo;s platform for its global leaderboard, it collects
+          and processes User ID, User Profile and Blocked Users data as described below. Run results
+          and a personal best are also generated during play. Local personal-best storage can
+          continue when the online leaderboard is unavailable.
+        </p>
         <table>
           <thead>
-            <tr><th>Data</th><th>Source</th><th>Why</th><th>Where it goes</th></tr>
+            <tr><th scope="col">Data</th><th scope="col">Source</th><th scope="col">Purpose</th><th scope="col">Storage</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td data-label="Data">Meta account ID</td>
+              <td data-label="Data">Meta user IDs (User ID), including your ID and IDs in retrieved leaderboard entries</td>
               <td data-label="Source">Meta Platform SDK</td>
-              <td data-label="Why">To identify which leaderboard entry is yours</td>
-              <td data-label="Where it goes">Held in memory during play only</td>
+              <td data-label="Purpose">Identify your leaderboard entry and match entries against your blocked-user list</td>
+              <td data-label="Storage">Used in game memory during the session; the game does not save these IDs to local storage</td>
             </tr>
             <tr>
-              <td data-label="Data">Display name</td>
+              <td data-label="Data">Display names or Meta/Oculus usernames (User Profile)</td>
+              <td data-label="Source">Meta Platform SDK leaderboard entries</td>
+              <td data-label="Purpose">Label players on the leaderboard; a username is used if a display name is unavailable</td>
+              <td data-label="Storage">Used in game memory during the session; not saved to local storage by the game</td>
+            </tr>
+            <tr>
+              <td data-label="Data">IDs of users you have blocked (Blocked Users)</td>
               <td data-label="Source">Meta Platform SDK</td>
-              <td data-label="Why">To label the other entries shown on the in-game board</td>
-              <td data-label="Where it goes">Held in memory during play only</td>
+              <td data-label="Purpose">Filter blocked players out of the leaderboard shown to you</td>
+              <td data-label="Storage">Used temporarily in memory for filtering; not saved to local storage by the game</td>
             </tr>
             <tr>
-              <td data-label="Data">Blocked-user list</td>
-              <td data-label="Source">Meta Platform SDK</td>
-              <td data-label="Why">So a player you have blocked never appears on your board</td>
-              <td data-label="Where it goes">Read into memory, used to filter, never stored</td>
+              <td data-label="Data">Run scores and rankings, including rows crossed and elapsed time encoded in a score</td>
+              <td data-label="Source">Gameplay and Meta&rsquo;s leaderboard service</td>
+              <td data-label="Purpose">Submit your result and show global rankings and nearby players</td>
+              <td data-label="Storage">Scores are stored by Meta in association with your account; retrieved entries are displayed and cached in game memory</td>
             </tr>
             <tr>
-              <td data-label="Data">Your run result (rows crossed and elapsed time, as one number)</td>
-              <td data-label="Source">Generated by the game as you play</td>
-              <td data-label="Why">To rank you against other players</td>
-              <td data-label="Where it goes">Submitted to Meta&rsquo;s leaderboard service</td>
+              <td data-label="Data">Your personal-best score</td>
+              <td data-label="Source">Gameplay</td>
+              <td data-label="Purpose">Show your saved personal best, including offline</td>
+              <td data-label="Storage">Saved in the app&rsquo;s local data on your headset</td>
             </tr>
             <tr>
-              <td data-label="Data">Your personal best</td>
-              <td data-label="Source">Generated by the game as you play</td>
-              <td data-label="Why">So the game can show your own best result</td>
-              <td data-label="Where it goes">Stored on your headset only</td>
+              <td data-label="Data">Contact email, message contents and identifying details you provide in a support or deletion request</td>
+              <td data-label="Source">You, when you email us</td>
+              <td data-label="Purpose">Respond, verify the relevant entry, and fulfil your request</td>
+              <td data-label="Storage">Our support email account, provided by Google (Gmail)</td>
             </tr>
           </tbody>
         </table>
-
         <p>
-          We do not collect your email address, real name, profile picture, friends list, location,
-          voice, movement recordings, or any other data. We do not ask you to create an account with
-          us, because there is no account with us to create.
+          The leaderboard integration does not request your email address, real name, profile
+          picture, friends list, location, voice or movement recordings. You do not need to create
+          a separate Title Unknown Studios account. If you contact us, we receive the email address
+          and information you choose to include in your message.
         </p>
 
-        <h2>How the data is processed</h2>
+        <h2>How data is used and shared</h2>
         <p>
-          Your run result is submitted to Meta&rsquo;s leaderboard service under the leaderboard name
-          <code>impossible_ascent_v1</code>, associated with your Meta account by Meta. Meta stores
-          it; we do not receive a copy, and we hold no database. When the in-game board is displayed,
-          the game asks Meta for the top entries and the entries near yours, and draws them.
+          The game sends eligible run scores to Meta&rsquo;s leaderboard service, which associates
+          them with your Meta account. It retrieves scores, ranks, user IDs and profile names to
+          display leaderboard entries. Your leaderboard name, score and rank may be visible to
+          other players. Your blocked-user list is used for filtering and is not displayed to them.
         </p>
         <p>
-          Your account ID, display name and blocked-user list are read from the Meta Platform SDK
-          while the game is running, used to draw the board correctly, and discarded when the game
-          closes. They are never written to disk, never transmitted anywhere by us, and never shared
-          with anyone.
-        </p>
-        <p>
-          Your personal best is stored locally on your headset so the game can show it offline. It
-          never leaves the device.
+          We do not sell personal data or use it for advertising. Meta receives and stores leaderboard
+          submissions and provides platform data to the game. Meta&rsquo;s own handling of account
+          and platform data is described in <a href="https://www.meta.com/legal/privacy-policy/">Meta&rsquo;s privacy policy</a>.
+          Support and deletion emails are handled through Gmail to allow us to respond to your request.
         </p>
 
-        <h2>Sharing</h2>
+        <h2>How long data is retained</h2>
         <p>
-          We share no data with anyone. We sell no data. The only party involved is Meta, who
-          operates the leaderboard service and whose handling of your account data is governed by
-          Meta&rsquo;s own privacy policy.
+          User IDs, profile names, blocked-user IDs and retrieved leaderboard entries are used in
+          game memory and are not retained by the game after it closes. Meta retains its underlying
+          account data separately. Online scores remain in Meta&rsquo;s leaderboard until replaced
+          by a better result or deleted. Local personal-best data remains until the app&rsquo;s
+          saved data is cleared.
+        </p>
+        <p>
+          We retain support correspondence only as long as needed to handle the request and any
+          follow-up, or to meet a legal obligation. If a legal obligation prevents deletion of
+          particular information, we will explain what is retained and why in our response.
         </p>
 
-        <h2>Retention and deletion</h2>
-        <p>Your run result stays on the leaderboard until it is removed.</p>
+        <h2 id="data-deletion">Request deletion of your data</h2>
         <p>
-          To have your leaderboard entry deleted, email
-          <a href="mailto:titleunknownstudios@gmail.com">titleunknownstudios@gmail.com</a> from the
-          address associated with your Meta account, or include your Meta display name. We will
-          remove the entry within 30 days and confirm by reply.
+          You can request deletion of your Impossible leaderboard entry and personal information
+          held by Title Unknown Studios by emailing
+          <a href="mailto:titleunknownstudios@gmail.com">titleunknownstudios@gmail.com</a>.
+          No separate account or web form is required.
         </p>
-        <p>To delete your locally stored personal best, uninstall the app from your headset.</p>
         <p>
-          Data held by Meta about your account is controlled by Meta, and you can manage it through
+          <a class="btn primary" href="mailto:titleunknownstudios@gmail.com?subject=Impossible%20data%20deletion%20request&amp;body=Please%20delete%20my%20Impossible%20data.%0A%0AMy%20Meta%20username%20or%20display%20name%3A%20%0AData%20to%20delete%20%28leaderboard%20entry%2C%20support%20correspondence%2C%20or%20all%20Impossible%20personal%20data%29%3A%20%0A">Email a deletion request</a>
+        </p>
+        <ol>
+          <li>Use the subject <strong>Impossible data deletion request</strong>.</li>
+          <li>Include your Meta username or display name and tell us whether you want your leaderboard entry, support correspondence, or all Impossible personal data we hold deleted.</li>
+          <li>We will reply to acknowledge the request. If necessary, we will ask for the minimum additional information needed to verify the request and identify the correct entry. A display name alone may not uniquely identify an account.</li>
+          <li>We will handle verified requests without undue delay, aim to complete them within 30 days of receiving the request, and confirm the outcome by email. If verification or a legal requirement affects completion, we will explain this to you.</li>
+        </ol>
+        <p>
+          The button opens your email application; you must send the message to submit the request.
+          If it does not open, copy the address into your email service. Do not send your password,
+          authentication codes, payment details or identity documents.
+        </p>
+        <p>
+          <strong>Leaderboard data:</strong> We will remove the verified entry from Impossible&rsquo;s
+          Meta-hosted leaderboard. Closing or uninstalling the game does not itself delete that
+          online entry. Further online play can submit a new score; deletion does not permanently
+          prevent future collection or score submissions.
+        </p>
+        <p>
+          <strong>Data on your headset:</strong> We cannot remotely erase local saves. Clear
+          Impossible&rsquo;s app data using your headset&rsquo;s available storage controls, or
+          uninstall the app to remove its local data. If a platform backup restores saved data,
+          manage that backup through Meta&rsquo;s backup controls. Contact us if you need help.
+        </p>
+        <p>
+          <strong>Temporary data and your Meta account:</strong> Close Impossible to release the
+          data held in game memory. Deleting Impossible data does not delete your Meta account or
+          alter its profile or blocked-user settings. Manage that separate information through
           your Meta account settings.
         </p>
 
