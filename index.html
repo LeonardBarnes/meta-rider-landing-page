@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <script>document.documentElement.classList.add('js')</script>
   <title>Title Unknown Studios</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Title Unknown Studios</a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a class="active" href="index.html">Games</a>
-        <a href="privacy-policy/">Privacy Policy</a>
-        <a href="privacy-policy/impossible/">Privacy Policy - Impossible</a>
-      </nav>
-      <a class="btn primary" href="contact.html">Contact Us</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="site-menu">
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="active" href="index.html">Games</a>
+          <a href="privacy-policy/">Privacy Policy</a>
+          <a href="privacy-policy/impossible/">Privacy Policy - Impossible</a>
+        </nav>
+        <a class="btn primary" href="contact.html">Contact Us</a>
+      </div>
     </div>
   </header>
 
@@ -37,9 +45,9 @@
 
     <section class="games container" id="games" aria-label="Our games">
 
-      <article class="game">
+      <article class="game reveal">
         <div class="game-media">
-          <img src="assets/impossible-hero.png"
+          <img src="assets/impossible-hero.png" width="2000" height="1125" loading="eager" decoding="async"
                alt="Impossible key art: a glowing path of coloured glass tiles leading to a portal above the clouds">
         </div>
         <div class="game-body">
@@ -56,10 +64,10 @@
         </div>
       </article>
 
-      <article class="game">
+      <article class="game reveal">
         <a class="game-media" href="https://www.meta.com/experiences/just-mop-vr/1501354585093259/"
            target="_blank" rel="noopener">
-          <img src="assets/just-mop-vr-hero.png"
+          <img src="assets/just-mop-vr-hero.png" width="1672" height="941" loading="lazy" decoding="async"
                alt="Just Mop VR key art: a mop sweeping a glowing trail of water across a tiled bathroom floor">
         </a>
         <div class="game-body">
@@ -77,10 +85,10 @@
         </div>
       </article>
 
-      <article class="game">
+      <article class="game reveal">
         <a class="game-media" href="https://www.meta.com/experiences/meta-rider/4400787600027616/"
            target="_blank" rel="noopener">
-          <img src="assets/meta-rider-hero.png"
+          <img src="assets/meta-rider-hero.png" width="2500" height="1406" loading="lazy" decoding="async"
                alt="Meta Rider key art: a hoverbike above a sunlit planet, with the Meta Rider wordmark in the stars">
         </a>
         <div class="game-body">
