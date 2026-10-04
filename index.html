@@ -21,9 +21,15 @@
       </button>
       <div class="nav-menu" id="site-menu">
         <nav class="nav-links" aria-label="Main navigation">
-          <a class="active" href="index.html">Games</a>
-          <a href="privacy-policy/">Privacy Policy</a>
-          <a href="privacy-policy/impossible/">Privacy Policy - Impossible</a>
+          <a class="active" aria-current="page" href="index.html">Games</a>
+          <details class="privacy-menu">
+            <summary>Privacy Policy</summary>
+            <div class="privacy-links">
+              <a href="privacy-policy/">General privacy policy</a>
+              <a href="privacy-policy/impossible/">Impossible</a>
+              <a href="privacy-policy/cybershot/">Cybershot</a>
+            </div>
+          </details>
         </nav>
         <a class="btn primary" href="contact.html">Contact Us</a>
       </div>
@@ -37,7 +43,7 @@
         <h1>We build VR games you can pick up in a minute.</h1>
         <p class="lede">
           A small independent studio making hand-built worlds for Meta Quest &mdash; simple to start,
-          hard to put down. Three titles so far, with more on the way.
+          hard to put down. Explore our games and what&rsquo;s coming next.
         </p>
         <div class="rule"></div>
       </div>
@@ -46,9 +52,31 @@
     <section class="games container" id="games" aria-label="Our games">
 
       <article class="game reveal">
+        <div class="game-media">
+          <img src="assets/cybershot-hero-1600.webp"
+               srcset="assets/cybershot-hero-800.webp 800w, assets/cybershot-hero-1600.webp 1600w"
+               sizes="(max-width: 900px) calc(100vw - 40px), (max-width: 1180px) 53vw, 602px"
+               width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"
+               alt="Cybershot cover art: a slingshot fires a crystal into glowing cyan, pink and lime jars in a neon city">
+        </div>
+        <div class="game-body">
+          <span class="status soon">Coming soon to Meta Quest</span>
+          <h2>Cybershot</h2>
+          <p>
+            Load your slingshot, match the neon colours and shatter connected jars in a cyberpunk
+            VR arcade. Clear rising stacks, survive faster waves and chase your best score.
+            One more shot could take you to the top.
+          </p>
+          <div class="game-links">
+            <a href="privacy-policy/cybershot/">Privacy Policy</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game reveal">
         <a class="game-media" href="https://www.meta.com/experiences/impossible/1532649918630392/"
            target="_blank" rel="noopener">
-          <img src="assets/impossible-hero.png" width="2000" height="1125" loading="eager" decoding="async"
+          <img src="assets/impossible-hero.png" width="2000" height="1125" loading="lazy" decoding="async"
                alt="Impossible key art: a glowing path of coloured glass tiles leading to a portal above the clouds">
         </a>
         <div class="game-body">

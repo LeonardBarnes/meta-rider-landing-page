@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <script>document.documentElement.classList.add('js')</script>
-  <title>Impossible Privacy Policy - Title Unknown Studios</title>
-  <meta name="description" content="What data Impossible collects and uses, how it is retained, and how to request deletion.">
+  <title>Cybershot Privacy Policy - Title Unknown Studios</title>
+  <meta name="description" content="How Cybershot uses leaderboard data, local scores and settings, and how to request deletion.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,8 +27,8 @@
             <summary class="active">Privacy Policy</summary>
             <div class="privacy-links">
               <a href="../../privacy-policy/">General privacy policy</a>
-              <a href="../../privacy-policy/impossible/" aria-current="page">Impossible<span class="policy-current" aria-hidden="true">Current</span></a>
-              <a href="../../privacy-policy/cybershot/">Cybershot</a>
+              <a href="../../privacy-policy/impossible/">Impossible</a>
+              <a href="../../privacy-policy/cybershot/" aria-current="page">Cybershot <span class="policy-current" aria-hidden="true">Current</span></a>
             </div>
           </details>
         </nav>
@@ -40,10 +40,10 @@
   <main>
     <section class="section">
       <div class="container narrow content-card">
-        <p>Effective date: September 22, 2026</p>
-        <h1>Impossible &mdash; Privacy Policy</h1>
+        <p>Effective date: October 4, 2026</p>
+        <h1>Cybershot &mdash; Privacy Policy</h1>
         <p>
-          Impossible is developed by Title Unknown Studios. This policy covers the Impossible
+          Cybershot is developed by Title Unknown Studios. This policy covers the Cybershot
           application on Meta Horizon OS and explains what personal data we collect and process,
           why we use it, where it is retained, and how you can request its deletion. It supplements
           our <a href="../">general privacy policy</a> and takes precedence for this app.
@@ -53,17 +53,17 @@
         </p>
         <p>
           We do not operate our own game-data servers or database. The game uses Meta&rsquo;s
-          Platform SDK and leaderboard service. We do not use game analytics, advertising or
+          Platform SDK and leaderboard service when online rankings are enabled. We do not use game analytics, advertising or
           tracking services. Receiving data through Meta&rsquo;s SDK is collection and processing,
           including when the data is used only temporarily in the game&rsquo;s memory.
         </p>
 
         <h2>Data we collect and use</h2>
         <p>
-          When Impossible connects to Meta&rsquo;s platform for its global leaderboard, it collects
-          and processes User ID, User Profile and Blocked Users data as described below. Run results
-          and a personal best are also generated during play. Local personal-best storage can
-          continue when the online leaderboard is unavailable.
+          When online rankings are enabled and Cybershot connects to Meta&rsquo;s platform for its global leaderboard, it collects
+          and processes User ID, User Profile and Blocked Users data as described below. Points,
+          wave progress and a personal best are generated during play. Your best score, saved run
+          results and preferences can remain on your headset when the online leaderboard is unavailable.
         </p>
         <table>
           <thead>
@@ -73,7 +73,7 @@
             <tr>
               <td data-label="Data">Meta user IDs (User ID), including your ID and IDs in retrieved leaderboard entries</td>
               <td data-label="Source">Meta Platform SDK</td>
-              <td data-label="Purpose">Identify your leaderboard entry and match entries against your blocked-user list</td>
+              <td data-label="Purpose">Identify and highlight your leaderboard entry and match entries against your blocked-user list</td>
               <td data-label="Storage">Used in game memory during the session; the game does not save these IDs to local storage</td>
             </tr>
             <tr>
@@ -89,16 +89,28 @@
               <td data-label="Storage">Used temporarily in memory for filtering; not saved to local storage by the game</td>
             </tr>
             <tr>
-              <td data-label="Data">Run scores and rankings, including rows crossed and elapsed time encoded in a score</td>
+              <td data-label="Data">Run scores and rankings, including points earned and wave reached encoded in a score</td>
               <td data-label="Source">Gameplay and Meta&rsquo;s leaderboard service</td>
               <td data-label="Purpose">Submit your result and show global rankings and nearby players</td>
               <td data-label="Storage">Scores are stored by Meta in association with your account; retrieved entries are displayed and cached in game memory</td>
             </tr>
             <tr>
-              <td data-label="Data">Your personal-best score</td>
+              <td data-label="Data">Your personal-best score and up to 20 saved run results (points and wave reached)</td>
               <td data-label="Source">Gameplay</td>
-              <td data-label="Purpose">Show your saved personal best, including offline</td>
+              <td data-label="Purpose">Show your personal best and local rankings, including offline</td>
               <td data-label="Storage">Saved in the app&rsquo;s local data on your headset</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Master audio, music and haptic preferences</td>
+              <td data-label="Source">Your in-game settings</td>
+              <td data-label="Purpose">Remember your chosen sound and vibration levels</td>
+              <td data-label="Storage">Saved locally on your headset; not sent to the leaderboard</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Headset and controller position and rotation</td>
+              <td data-label="Source">Your headset and controllers during play</td>
+              <td data-label="Purpose">Support aiming, interaction and recentering in VR</td>
+              <td data-label="Storage">Used locally during play; the game does not record or send this movement data to the leaderboard or to us</td>
             </tr>
             <tr>
               <td data-label="Data">Contact email, message contents and identifying details you provide in a support or deletion request</td>
@@ -117,7 +129,7 @@
 
         <h2>How data is used and shared</h2>
         <p>
-          The game sends eligible run scores to Meta&rsquo;s leaderboard service, which associates
+          When online rankings are enabled, the game sends eligible scores to Meta&rsquo;s leaderboard service, which associates
           them with your Meta account. It retrieves scores, ranks, user IDs and profile names to
           display leaderboard entries. Your leaderboard name, score and rank may be visible to
           other players. Your blocked-user list is used for filtering and is not displayed to them.
@@ -134,8 +146,9 @@
           User IDs, profile names, blocked-user IDs and retrieved leaderboard entries are used in
           game memory and are not retained by the game after it closes. Meta retains its underlying
           account data separately. Online scores remain in Meta&rsquo;s leaderboard until replaced
-          by a better result or deleted. Local personal-best data remains until the app&rsquo;s
-          saved data is cleared.
+          by a better result or deleted. Local scores, saved run results and preferences remain until
+          the app&rsquo;s saved data is cleared. The saved local run list holds up to 20 results.
+          Movement data is used for live gameplay and is not retained as a recording.
         </p>
         <p>
           We retain support correspondence only as long as needed to handle the request and any
@@ -145,17 +158,17 @@
 
         <h2 id="data-deletion">Request deletion of your data</h2>
         <p>
-          You can request deletion of your Impossible leaderboard entry and personal information
+          You can request deletion of your Cybershot leaderboard entry and personal information
           held by Title Unknown Studios by emailing
           <a href="mailto:titleunknownstudios@gmail.com">titleunknownstudios@gmail.com</a>.
           No separate account or web form is required.
         </p>
         <p>
-          <a class="btn primary" href="mailto:titleunknownstudios@gmail.com?subject=Impossible%20data%20deletion%20request&amp;body=Please%20delete%20my%20Impossible%20data.%0A%0AMy%20Meta%20username%20or%20display%20name%3A%20%0AData%20to%20delete%20%28leaderboard%20entry%2C%20support%20correspondence%2C%20or%20all%20Impossible%20personal%20data%29%3A%20%0A">Email a deletion request</a>
+          <a class="btn primary" href="mailto:titleunknownstudios@gmail.com?subject=Cybershot%20data%20deletion%20request&amp;body=Please%20delete%20my%20Cybershot%20data.%0A%0AMy%20Meta%20username%20or%20display%20name%3A%20%0AData%20to%20delete%20%28leaderboard%20entry%2C%20support%20correspondence%2C%20or%20all%20Cybershot%20personal%20data%29%3A%20%0A">Email a deletion request</a>
         </p>
         <ol>
-          <li>Use the subject <strong>Impossible data deletion request</strong>.</li>
-          <li>Include your Meta username or display name and tell us whether you want your leaderboard entry, support correspondence, or all Impossible personal data we hold deleted.</li>
+          <li>Use the subject <strong>Cybershot data deletion request</strong>.</li>
+          <li>Include your Meta username or display name and tell us whether you want your leaderboard entry, support correspondence, or all Cybershot personal data we hold deleted.</li>
           <li>We will reply to acknowledge the request. If necessary, we will ask for the minimum additional information needed to verify the request and identify the correct entry. A display name alone may not uniquely identify an account.</li>
           <li>We will handle verified requests without undue delay, aim to complete them within 30 days of receiving the request, and confirm the outcome by email. If verification or a legal requirement affects completion, we will explain this to you.</li>
         </ol>
@@ -165,27 +178,28 @@
           authentication codes, payment details or identity documents.
         </p>
         <p>
-          <strong>Leaderboard data:</strong> We will remove the verified entry from Impossible&rsquo;s
+          <strong>Leaderboard data:</strong> We will remove the verified entry from Cybershot&rsquo;s
           Meta-hosted leaderboard. Closing or uninstalling the game does not itself delete that
           online entry. Further online play can submit a new score; deletion does not permanently
           prevent future collection or score submissions.
         </p>
         <p>
-          <strong>Data on your headset:</strong> We cannot remotely erase local saves. Clear
-          Impossible&rsquo;s app data using your headset&rsquo;s available storage controls, or
+          <strong>Data on your headset:</strong> We cannot remotely erase local scores, saved run results
+          or preferences. Clear
+          Cybershot&rsquo;s app data using your headset&rsquo;s available storage controls, or
           uninstall the app to remove its local data. If a platform backup restores saved data,
           manage that backup through Meta&rsquo;s backup controls. Contact us if you need help.
         </p>
         <p>
-          <strong>Temporary data and your Meta account:</strong> Close Impossible to release the
-          data held in game memory. Deleting Impossible data does not delete your Meta account or
+          <strong>Temporary data and your Meta account:</strong> Close Cybershot to release the
+          data held in game memory. Deleting Cybershot data does not delete your Meta account or
           alter its profile or blocked-user settings. Manage that separate information through
           your Meta account settings.
         </p>
 
         <h2>Children</h2>
         <p>
-          Impossible is not directed at children under 13, and we do not knowingly process data from
+          Cybershot is not directed at children under 13, and we do not knowingly process data from
           them. Meta account age requirements apply.
         </p>
 
